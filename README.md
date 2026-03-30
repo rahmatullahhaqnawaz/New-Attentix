@@ -91,20 +91,24 @@ if ear > 0.15: score += 40
 if abs(yaw) < 45: score += 30
 if motion > 0.0003: score += 20
 if expression in ("focused", "neutral"): score += 10
-🎯 Output Behavior
+
+
+##🎯 Output Behavior
 Score	State	Action
 >70	HIGH	⚡ 1.5× speed
 40–70	MED	▶️ Normal
 <40	LOW	⏸ Pause + Quiz
-🛠️ Tech Stack
+
+##🛠️ Tech Stack
 Layer	Tech
 AI Vision	MediaPipe FaceMesh
 Video	OpenCV
 Backend	FastAPI
 Frontend	React + Tailwind
 Charts	Recharts
-⚙️ Installation
-🔧 Backend
+
+##⚙️ Installation
+#🔧 Backend
 
 git clone https://github.com/rahmatullahhaqnawaz/New-Attentix.git
 cd New-Attentix
@@ -119,12 +123,12 @@ uvicorn main:app --reload
 
 👉 http://localhost:8000
 
-🌐 Frontend
+#🌐 Frontend
 cd frontend/attentivise-insights
 npm install
 npm run dev
 
-🔌 API Example
+##🔌 API Example
 {
   "score": 82,
   "state": "high",
@@ -132,20 +136,20 @@ npm run dev
   "expression": "focused"
 }
 
-📁 Project Structure
+##📁 Project Structure
 attentix/
 ├── backend/
 ├── frontend/
 ├── samples/
 └── README.md
-🔮 Future Roadmap
+##🔮 Future Roadmap
 🎭 Emotion detection AI
 🤖 Auto-generated quizzes
 👥 Multi-student comparison
 📱 Mobile app
 🎓 LMS integration
 
-👨‍💻 Author
+##👨‍💻 Author
 
-Rehmatullah Haqnawaz
-👉 https://github.com/rahmatullahhaqnawaz
+#Rehmatullah Haqnawaz
+👉 linkedin : https://www.linkedin.com/in/rehmatullah-haqnawaz-4947b0291/
